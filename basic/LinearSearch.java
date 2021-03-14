@@ -19,8 +19,11 @@ public class LinearSearch {
 		System.out.println("To find: ");
 		int tofind = sc.nextInt();
 		
-		
-		System.out.println("Element found at index: " + linearSearch(nums, tofind));
+		int foundAt = linearSearch(nums, tofind);
+		if(foundAt == -1)
+			System.out.println("Element not found! ");
+		else
+			System.out.println("Element found at index: " + foundAt);
 
 	}
 	
