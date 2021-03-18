@@ -29,9 +29,12 @@ public class LinearSearch {
 	
 	static int linearSearch(int[] nums, int tofind) {
 		int foundAt = -1;
-		for(int i=0; i<nums.length; i++) 
-			if( nums[i] == tofind )
+		for(int i=0; i<nums.length; i++) { 
+			if( nums[i] == tofind ) {
 				foundAt = i;
+				break;
+			}
+		}
 		return foundAt;
 	}
 
